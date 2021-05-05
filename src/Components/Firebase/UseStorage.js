@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { projectStorage } from "./config";
+import { projectStorage, projectFireStore, timestamp } from "./config";
 
 const UseStorage = (file) => {
   const [progress, setProgress] = useState(0);
@@ -8,6 +8,8 @@ const UseStorage = (file) => {
 
   useEffect(() => {
     const storageRef = projectStorage.ref(file.name);
+    const collectionRef = projectFireStore.collection("images");
+
     storageRef.put(file).on(
       "state_changed",
       (snapshot) => {
@@ -20,6 +22,8 @@ const UseStorage = (file) => {
       },
       async () => {
         const url = await storageRef.getDownloadURL();
+        const createdAt = timestamp();
+        collectionRef.add({ url, createdAt });
         setUrl(url);
       }
     );
