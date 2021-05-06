@@ -1,4 +1,5 @@
 import Header from "./Components/Header/Header";
+import ImageGrid from "./Components/ImageGrid/ImageGrid";
 import UploadForm from "./Components/UploadForm/UploadForm";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <UploadForm />
+      <ImageGrid />
     </div>
   );
 }
