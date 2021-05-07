@@ -3,7 +3,7 @@ import UseFirestore from "../Firebase/UseFirestore";
 
 import "./ImageGrid.scss";
 
-const ImageGrid = () => {
+const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = UseFirestore("images");
 
   return (
@@ -11,7 +11,11 @@ const ImageGrid = () => {
       {docs &&
         docs.map((image) => {
           return (
-            <div className="image" key={image.id}>
+            <div
+              className="image"
+              key={image.id}
+              onClick={() => setSelectedImg(image.url)}
+            >
               <img src={image.url} alt="uploaded pic" />
             </div>
           );
