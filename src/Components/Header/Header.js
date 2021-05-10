@@ -6,8 +6,8 @@ const Title = () => {
   return (
     <div className="title">
       <h1>ImageScape</h1>
-      <h2>Your Pictures</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <h2>Photo Gallery</h2>
+      <p>A quick display of all your images</p>
     </div>
   );
 };

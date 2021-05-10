@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import UseStorage from "../Firebase/UseStorage";
 
+import { motion } from "framer-motion";
+
 import "./ProgressBar.scss";
 
 const ProgressBar = ({ file, setFile }) => {
@@ -12,7 +14,13 @@ const ProgressBar = ({ file, setFile }) => {
     }
   }, [url, setFile]);
 
-  return <div className="progress-bar" style={{ width: progress + "%" }}></div>;
+  return (
+    <motion.div
+      className="progress-bar"
+      initial={{ width: 0 }}
+      animate={{ width: progress + "%" }}
+    ></motion.div>
+  );
 };
 
 export default ProgressBar;
