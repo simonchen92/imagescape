@@ -11,9 +11,9 @@ npm start
 
 ## Technologies Used
 
-- FireBase
-- FireBase Firestore
-- FireBase Storage
+- Firebase
+- Firebase Firestore
+- Firebase Storage
 - Framer Motion
 - React
 - SASS
