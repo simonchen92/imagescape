@@ -10,7 +10,7 @@ const UseStorage = (file) => {
     const storageRef = projectStorage.ref(file.name);
     const collectionRef = projectFireStore
       .collection("images")
-      .orderBy("", "desc");
+      .orderBy("createdAt", "desc");
 
     storageRef.put(file).on(
       "state_changed",
