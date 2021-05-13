@@ -8,9 +8,7 @@ const UseStorage = (file) => {
 
   useEffect(() => {
     const storageRef = projectStorage.ref(file.name);
-    const collectionRef = projectFireStore
-      .collection("images")
-      .orderBy("createdAt", "desc");
+    const collectionRef = projectFireStore.collection("images");
 
     storageRef.put(file).on(
       "state_changed",
