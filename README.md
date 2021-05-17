@@ -27,12 +27,12 @@ A photo gallery using React and Firebase where you can quickly upload your photo
 
    - Replace the key value in the file with the values given by Firebase
 
-1. To create Firebase Database
+1. To create Firestore Database
 
-   - Go to Firebase Database tab in Firebase
+   - Go to Firestore Database tab in Firebase
    - Click on Rules Tab
    - Two Mode to select from so you select Test Mode
-   - Firebase Database should now be created
+   - Firestore Database should now be created
 
 1. To create Firebase Storage
 
