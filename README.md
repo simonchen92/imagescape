@@ -14,8 +14,10 @@ A photo gallery using React and Firebase where you can quickly upload your photo
 
 - Firebase
 - Firebase Firestore
+- Firebase Hosting
 - Firebase Storage
 - Framer Motion
+- JavaScript
 - React
 - SASS
 
