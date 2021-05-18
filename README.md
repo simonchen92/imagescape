@@ -33,14 +33,16 @@ A photo gallery using React and Firebase where you can quickly upload your photo
 
    - Go to Firestore Database tab in Firebase
    - Click on Rules Tab
-   - Two Mode to select from so you select Test Mode
+   - Two Mode to select from once you start so you select Test Mode
+     - Be advise that Test Mode only allow 30 days from creation so you may need to fix the adjust the rules if using longer than that timeframe
    - Firestore Database should now be created
 
 1. To create Firebase Storage
 
    - Go to Storage tab in Firebase
    - Click on Rules Tab
-   - Rewrite the rules to look something like shown below (only changing the allow rule to allow read & write permissions since authentification isn't needed)
+   - Rewrite the rules to look something like shown below
+     - We are only changing the allow rule to allow read & write permissions since authentification isn't needed)
 
    ```
    service firebase.storage {
