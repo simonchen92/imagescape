@@ -42,7 +42,7 @@ A photo gallery using React and Firebase where you can quickly upload your photo
    - Go to Storage tab in Firebase
    - Click on Rules Tab
    - Rewrite the rules to look something like shown below
-     - We are only changing the allow rule to allow read & write permissions since authentification isn't needed)
+     - We are only changing the allow rule to allow read & write permissions since authentification isn't needed
 
    ```
    service firebase.storage {
